@@ -64,7 +64,14 @@
   border: none;
 }
 
-.timer-container button:hover {
+.timer-container button:hover,
+.timer-container button:focus {
   background: #2f5979;
   cursor: pointer;
+}
+
+.timer-container button:disabled {
+  background: #3a4349;
+  color: #dfdfdf;
+  cursor: not-allowed;
 }
